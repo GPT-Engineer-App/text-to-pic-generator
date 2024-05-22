@@ -7,6 +7,8 @@ const Index = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [loading, setLoading] = useState(false);
 
+  console.log("Index component rendered");
+
   const handleSearch = () => {
     if (query.trim() === "") return;
     setLoading(true);
