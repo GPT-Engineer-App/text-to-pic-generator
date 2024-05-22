@@ -7,12 +7,10 @@ const Index = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [loading, setLoading] = useState(false);
 
-  console.log("Index component rendered");
-
   const handleSearch = () => {
     if (query.trim() === "") return;
     setLoading(true);
-    // Simulate an API call to fetch the image URL
+
     setTimeout(() => {
       setImageUrl(`https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHwlMjQlN0JxdWVyeSU3RHxlbnwwfHx8fDE3MTYzNDA2NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080`);
       setLoading(false);
